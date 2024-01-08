@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Image, Text, View, SafeAreaView, TextInput, TouchableOpacity, ScrollView } from 'react-native'; // Importa TouchableOpacity
+import { Image, Text, View, SafeAreaView, TextInput, TouchableOpacity, ScrollView, StatusBar } from 'react-native'; // Importa TouchableOpacity
 import styles from './styles';
 import Button from '../../componnents/button'; 
 
@@ -34,6 +34,7 @@ const Login = (props) => {
 
   return (
     <>
+    <StatusBar></StatusBar>
     <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
       <SafeAreaView style={styles.container}>
         <TouchableOpacity style={styles.arrowContainer} onPress={()=> goToback()}> 

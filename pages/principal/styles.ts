@@ -1,5 +1,5 @@
 import { useState,  } from 'react';
-import { StyleSheet} from "react-native";
+import { StyleSheet, StatusBar} from "react-native";
 
 
 
@@ -9,11 +9,13 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor:'#051650',
+        marginTop: StatusBar.currentHeight,
       },
       image: {
-        width: 200,
-        height: 200,
-        marginBottom: 20,
+        width: 300,
+        height: 140,
+        marginBottom: 28,
       },
       buttonContainer: {
         width: '100%',
@@ -23,6 +25,11 @@ const styles = StyleSheet.create({
       button: {
         marginBottom: 10,
         width: 300,  // Ajusta el ancho según tus necesidades
+      },
+      image1: {
+        width: 200,
+        height: 200,
+        marginBottom: 28,
       },
 });
 

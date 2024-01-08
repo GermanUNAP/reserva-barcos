@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
 
     container: {
         flex: 1,
-        backgroundColor: '#ffffff',
+        backgroundColor: '#051650',
         alignItems: 'center',
         height: '100%',
         marginTop: StatusBar.currentHeight,
@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
         opacity: 0.8,
         fontWeight: 'bold',
         marginBottom: 8,
+        color: '#ffffff',
     },
     input: {
         fontSize: 16,
@@ -39,9 +40,10 @@ const styles = StyleSheet.create({
         borderBottomWidth: 2, 
         borderTopWidth: 2, 
         borderRightWidth: 2, 
-        borderColor: '#000000', // Cambia el color del borde según tus preferencias
-        borderRadius: 8, 
+        borderColor: '#ffffff', // Cambia el color del borde según tus preferencias
+        borderRadius: 6, 
         marginBottom: 8,
+        color: '#ffffff',
     },
     arrowContainer: {
         marginLeft: '-55%',

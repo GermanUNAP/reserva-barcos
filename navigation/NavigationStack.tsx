@@ -4,7 +4,7 @@ import Principal from '../pages/principal';
 //import Home from '../pages/Home';
 import Login from '../pages/login';
 import Register from '../pages/register';
-
+import Home from '../pages/home';
 
 
 import {
@@ -21,11 +21,13 @@ export default function NavigationStack() {
         screenOptions={{
           headerShown: false,
         }}
+        initialRouteName='Home'
       >
-        
         <Stack.Screen name="Principal" component={Principal}  />
         <Stack.Screen name="Login" component={Login}  />
         <Stack.Screen name="Register" component={Register}/>
+        <Stack.Screen name="Home" component={Home} />
+
       </Stack.Navigator>
     </SafeAreaProvider>
   );

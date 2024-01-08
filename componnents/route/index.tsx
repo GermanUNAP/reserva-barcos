@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   });
   
 
-const Button = ({ text, style, ...props }: ButtonProps) => {
+const Route = ({ text, style, ...props }: ButtonProps) => {
   return (
     <Pressable style={[styles.button, style]} {...props}>
       <Text style={styles.text}>{text}</Text>
@@ -33,4 +33,4 @@ const Button = ({ text, style, ...props }: ButtonProps) => {
   );
 };
 
-export default Button;
+export default Route;

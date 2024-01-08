@@ -1,6 +1,5 @@
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { Image, Text, View} from 'react-native';
+import { Image, Text, View, StatusBar} from 'react-native';
 
 import styles from './styles';
 import Button from '../../componnents/button';
@@ -23,24 +22,28 @@ const Principal = (props) => {
 
     return (
         <>
+            <StatusBar></StatusBar>
             <View style={styles.container}>
                 <Image
                     style={styles.image}
-                    source={require('../../assets/images/logo.png')}
+                    source={require('../../assets/images/driver.png')}
+                />
+                <Image
+                    style={styles.image1}
+                    source={require('../../assets/images/titikaka1.png')}
                 />
                 <View style={styles.buttonContainer}>
                     <Button
-                    text="Iniciar sesión"
-                    style={styles.button}
-                    onPress={goToPageLogin}
+                        text="Iniciar sesión"
+                        style={styles.button}
+                        onPress={goToPageLogin}
                     />
                     <Button
-                    text="Registrarme"
-                    style={styles.button}
-                    onPress={goToPageRegister}
+                        text="Registrarme"
+                        style={styles.button}
+                        onPress={goToPageRegister}
                     />
                 </View>
-                <StatusBar style="auto" />
             </View>
         </>
     );
